@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+internal class PrintCommand: Command {
+
+    internal init(content: String) {
+        self.content = content
+    }
+
+    internal func run() {
+        print(self.content)
+    }
+
+    private let content: String
+
+}
